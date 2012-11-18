@@ -25,7 +25,6 @@ if(Modernizr.touch) {
     clickevent = "touchstart";
 }
 
-// http://www.diveintojavascript.com/tutorials/web-storage-tutorial-creating-an-address-book-application
              var Entries = {
                  index: localStorage.getItem("Entries:index"),
                  $entries: document.getElementsByClassName("entries")[0],
