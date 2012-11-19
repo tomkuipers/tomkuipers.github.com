@@ -127,7 +127,7 @@ var Entries = {
                         Entries.viewRemove(entry);
                     }
                 }
-                event.preventDefault();
+                evt.preventDefault();
             }
         }, true);
 
