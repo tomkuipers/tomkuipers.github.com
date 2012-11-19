@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" manifest="manifest.appcache">
+    <head>
+        <meta charset="utf-8">
+        <title>W3C Assignment 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+        <link rel="stylesheet" href="css/diary.css">
+        <script src="javascript/modernizr-2.6.1.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>My Diary Entries<span><button id="btn-add" class="add">+</button></span></h1>
+        </header>
+        <section class="entries"></section>
+        <div id="wrapper-add-entry" class="hide">
+        <form id="entries-form">
+          <input type="hidden" id="id_entry" value="0"/>
+          <p><input type="text" name="subject" placeholder="Subject" required="required"/></p>
+          <p><textarea name="description" placeholder="What I wanted to share" required="required"></textarea></p>
+          <p id="geo-position"></p>
+          <input type="hidden" name="lat" value="No data"/><input type="hidden" name="lon" value="No data"/>
+          <input type="button" id="btn-cancel" value="Cancel"/>
+          <input type="submit" id="btn-save" value="Save" disabled="disabled"/>
+        </form>
+        </div>
+        <script src="javascript/moment.min.js"></script>
+        <script src="javascript/diary.js"></script>
+    </body>
+</html>
+
