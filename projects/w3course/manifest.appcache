@@ -1,8 +1,9 @@
 CACHE MANIFEST
-# 2012-11-19
+# v1
 
 CACHE:
-index.html
+
+w3c-assignment-4.html
 javascript/modernizr-2.6.1.min.js
 javascript/moment.min.js
 javascript/diary.js
