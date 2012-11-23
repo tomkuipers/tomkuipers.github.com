@@ -6,7 +6,8 @@ Modernizr.load([
   },
   {
     test: Modernizr.geolocation,
-    nope: 'javascript/geolocation.min.js'
+    // nope: 'javascript/geolocation.min.js' // syntax error on Opera Mini
+    nope: 'javascript/geolocation.js'
   },
   {
     test: window.JSON,
@@ -18,14 +19,10 @@ Modernizr.load([
   }
 ]);
 
-
 var clickevent = "mousedown";
 if(Modernizr.touch) {
     // touch events are supported
     clickevent = "touchstart";
-    console.log("Modernizr.touch: yes");
-} else {
-    console.log("Modernizr.touch: no");
 }
 
 var Entries = {
