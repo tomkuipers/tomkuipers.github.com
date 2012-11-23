@@ -23,6 +23,9 @@ var clickevent = "mousedown";
 if(Modernizr.touch) {
     // touch events are supported
     clickevent = "touchstart";
+    console.log("Modernizr.touch: yes");
+} else {
+    console.log("Modernizr.touch: no");
 }
 
 var Entries = {
