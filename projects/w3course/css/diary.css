@@ -31,4 +31,7 @@ input[type="button"] {float: left; width: 40%; padding: .5em;}
 .details > .location {float: right; text-decoration: none;}
 a, a:active, a:visited, a:hover {color: #86b410; cursor: pointer;}
 a:active {font-weight: bold;}
+#status {padding: .666666em; text-align: center;}
+#status.online {background: #0c0;}
+#status.offline {background: #c00;}
 
