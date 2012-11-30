@@ -239,3 +239,18 @@ var Entries = {
 };
 Entries.init();
 
+// online/offline indicator
+(function () {
+  var status = document.getElementById('status');
+  status.className = navigator.onLine ? 'online' : 'offline';
+  window.addEventListener('online', function () {
+    status.className = 'online';
+    status.innerHTML = 'online';
+  }, false);
+
+  window.addEventListener('offline', function () {
+    status.className = 'offline';
+    status.innerHTML = 'offline';
+  }, false);
+})();
+
